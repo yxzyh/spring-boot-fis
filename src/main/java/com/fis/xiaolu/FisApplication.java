@@ -3,8 +3,6 @@ package com.fis.xiaolu;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
-import org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration;
 
 /**
  * @Desc   描述。。。
@@ -12,7 +10,7 @@ import org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerA
  * @date   2019年11月28日下午3:55:01 
  */
 
-@SpringBootApplication(exclude = { DataSourceAutoConfiguration.class, DataSourceTransactionManagerAutoConfiguration.class })
+@SpringBootApplication
 @MapperScan("com.fis.xiaolu.dao")
 public class FisApplication {
 
